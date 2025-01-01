@@ -1,0 +1,105 @@
+:root{
+    --gunmetal: #062630;
+    --teal-green:#385159;
+    --platinum: #E6E1DF;
+    --snow: #FAF5F3;
+    --white: #ffffff;
+    --light-salmon-500: #FEA36F;
+    --light-salmon-100: #FFF5EF;
+    --light-salmon-50: #FFF5EF;
+    --text-gradient: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
+    --gradient: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 
+ @font-face {
+     font-family: ;
+     src: url();
+ } */
+
+.ultimate-tech__section {}
+
+.logo {}
+
+.book-club__heading {}
+
+.book-club__description {}
+
+.btn {}
+
+.btn-member__options {}
+
+.avatars-box {}
+
+.testimonial-avatars {}
+
+.icon-star {}
+
+.joined-description {}
+
+.image-hero {}
+
+.read-grow__section {}
+
+.read-and-grow__heading {}
+
+.club {}
+
+.club-heading {}
+
+.club-description {}
+
+.tech-journey__steps {}
+
+.tech-journey__heading {}
+
+.journey-box {}
+
+.journey-box__1 {}
+
+.jn__box {}
+
+.box-step__description {}
+
+.journey-box__2 {}
+
+.journey-box__3 {}
+
+.journey-box__4 {}
+
+.membership-subscription {}
+
+.membership-container {}
+
+.membership-heading {}
+
+.member-row {}
+
+.member-box__option {}
+
+.icon-check {}
+
+.btn-member-1 {}
+
+.btn-subscribe {}
+
+.testimonial {}
+
+.testimonial-row {}
+
+.testimonial-heading {}
+
+.footer-row {}
+
+.footer-heading {}
+
+.btn-footer {}
+
+.footer-line {}
+
+.copyright {}
