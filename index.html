@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Tech book club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -25,20 +28,24 @@
       <button class="btn btn-member__options">Review membership options <img src="assets/images/icon-arrow-down.svg" alt="arrow pointing down"></button>
       
       <div class="avatars-box">
-        <img class="testimonial-avatars" src="assets/images/image-avatars.webp" alt="avatar img of testimonials">
-        <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
-        <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
-        <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
-        <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
-        <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
-        <p class="joined-description">200+ developers joined already</p>
+        <div>
+          <img class="testimonial-avatars" src="assets/images/image-avatars.webp" alt="avatar img of testimonials">
+        </div>
+        <div>
+          <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
+          <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
+          <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
+          <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
+          <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
+          <p class="joined-description">200+ developers joined already</p>
+        </div>
       </div>
      </div>
      <div>
      <picture>
-      <source srcset="assets/images/image-hero-desktop.webp" media="(min-width: 48rem)">
-      <source srcset="assets/images/image-hero-tablet.webp" media="(min-width: 30rem) and (max-width: 47.99rem)">
-      <source srcset="assets/images/image-hero-mobile.webp" media="(min-width: 29.99rem)">
+       <source srcset="assets/images/image-hero-desktop.webp" media="(max-width: 48rem)">
+       <source srcset="assets/images/image-hero-tablet.webp" media="(min-width: 30rem) and (max-width: 47.99rem)">
+       <source srcset="assets/images/image-hero-mobile.webp" media="(max-width: 29.99rem)">
       <img class="image-hero" src="assets/images/image-hero-mobile.webp" alt="image hero of bookclubbers socializing">
      </picture>
     </div>
@@ -51,10 +58,10 @@
     <div class="row">
       <div>
         <picture>
-          <source srcset="assets/images/image-read-together-desktop.webp" media="(min-width: 48rem)">
+          <source srcset="assets/images/image-read-together-desktop.webp" media="(max-width: 48rem)">
           <source srcset="assets/images/image-read-together-tablet.webp" media="(min-width: 30rem) and (max-width: 47.99rem)">
-          <source srcset="assets/images/image-read-together-mobile.webp" media="(min-width: 29.99rem)">
-          <img class="image-hero" src="assets/images/image-read-together-mobile.webp" alt="image read and grow together">
+          <source srcset="assets/images/image-read-together-mobile.webp" media="(max-width: 29.99rem)">
+          <img class="image-read__together" src="assets/images/image-read-together-mobile.webp" alt="image read and grow together">
         </picture>
       </div>
       <div>
@@ -62,10 +69,10 @@
           Read together, grow together
         </h2>
         <ul>
-          <li><img src="assets/images/icon-check.svg" alt="icon check">Monthly curated tech reads selected by industry experts</li>
-          <li><img src="assets/images/icon-check.svg" alt="icon check">Virtual and in-person meetups for deep-dive discussions</li>
-          <li><img src="assets/images/icon-check.svg" alt="icon check">Early access to new tech book releases</li>
-          <li><img src="assets/images/icon-check.svg" alt="icon check">Author Q&A sessions with tech thought leaders</li>
+          <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">Monthly curated tech reads selected by industry experts</li>
+          <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">Virtual and in-person meetups for deep-dive discussions</li>
+          <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">Early access to new tech book releases</li>
+          <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">Author Q&A sessions with tech thought leaders</li>
         </ul>
       </div>
     </div>
@@ -80,18 +87,18 @@
           Not your average book club
         </h2>
         <p class="club-description">
-          Connect with a community that speaks your language - from Python to TypeScript and
+          Connect with a community that speaks your language - from <strong>Python</strong> to <strong>TypeScript</strong> and
           everything in between. Our discussions blend technical depth with practical applications.
         </p>
       </div>
+      <img class="tech-stack__img" src="assets/images/logos-tech.svg" alt="tech stack logo - Typescript, Github, ReactJS">
       <div>
         <picture>
-          <source srcset="assets/images/image-not-average-desktop.webp" media="(min-width: 48rem)">
+          <source srcset="assets/images/image-not-average-desktop.webp" media="(max-width: 48rem)">
           <source srcset="assets/images/image-not-average-tablet.webp" media="(min-width: 30rem) and (max-width: 47.99rem)">
-          <source srcset="assets/images/image-not-average-mobile.webp" media="(min-width: 29.99rem)">
-          <img class="image-hero" src="assets/images/image-not-average-mobile.webp" alt="image not your average book club">
+          <source srcset="assets/images/image-not-average-mobile.webp" media="(max-width: 29.99rem)">
+          <img class="book-club__img-3" src="assets/images/image-not-average-mobile.webp" alt="image not your average book club">
         </picture>
-        <img src="assets/images/logos-tech.svg" alt="">
       </div>
     </div>
   </section>
@@ -99,49 +106,56 @@
 
 <!-- tech journey section -->
   <section class="tech-journey__steps">
-    <h3 class="tech-journey__heading">Your tech reading journey</h3>
-    <div class="journey-box">
-      <div class="journey-box__1">
-        <div>
-          <div class="jn__box">
-            1
+    <div class="journey-steps__container">
+
+      <h3 class="tech-journey__heading">Your tech <br> reading journey</h3>
+      <div class="journey-box">
+        <div class="journey-box__1">
+          <div class="member-box__steps">
+            <div class="jn__box">
+              1
+            </div>
+            <div>
+              <img src="assets/images/pattern-arrow.svg" alt="Pattern arrow">
+            </div>
           </div>
-          <img src="assets/images/pattern-arrow.svg" alt="Pattern arrow">
-        </div>
-        <div>
-          <p class="box-step__description">Choose your membership tier</p>
-        </div>
-      </div>
-      <div class="journey-box__2">
-        <div>
-          <div class="jn__box">
-            2
+          <div>
+            <p class="box-step__description">Choose your membership tier</p>
           </div>
-          <img src="assets/images/pattern-arrow.svg" alt="Pattern arrow">
         </div>
-        <div>
-          <p class="box-step__description">Get your monthly book selection</p>
-        </div>
-      </div>
-      <div class="journey-box__3">
-        <div>
-          <div class="jn__box">
-            3
+        <div class="journey-box__2">
+          <div class="member-box__steps">
+            <div class="jn__box">
+              2
+            </div>
+            <div>
+              <img src="assets/images/pattern-arrow.svg" alt="Pattern arrow">
+            </div>
           </div>
-          <img src="assets/images/pattern-arrow.svg" alt="Pattern arrow">
+          <div>
+            <p class="box-step__description">Get your monthly book selection</p>
+          </div>
         </div>
-        <div>
-          <p class="box-step__description">Join our discussion forums</p>
+        <div class="journey-box__3">
+          <div class="member-box__steps">
+            <div class="jn__box">
+              3
+            </div>
+            <img src="assets/images/pattern-arrow.svg" alt="Pattern arrow">
+          </div>
+          <div>
+            <p class="box-step__description">Join our discussion forums</p>
+          </div>
         </div>
-      </div>
-      <div class="journey-box__4">
-       <div>
-        <div class="jn__box">
-          4
-        </div>
-       </div>
-        <div>
-          <p class="box-step__description">Attend exclusive meetups</p>
+        <div class="journey-box__4">
+         <div class="member-box__steps">
+          <div class="jn__box">
+            4
+          </div>
+         </div>
+          <div>
+            <p class="box-step__description">Attend exclusive meetups</p>
+          </div>
         </div>
       </div>
     </div>
@@ -153,9 +167,9 @@
   <div class="membership-container">
     <h3 class="membership-heading">Membership options</h3>
     <div class="member-row">
-      <div class="member-box__option">
+      <div class="member-box__start">
        <p>Starter</p>
-       <p>$19 <span>/month</span></p>
+       <p>$19<span>/month</span></p>
         <ul>
           <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">1 book/month</li>
           <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">Online forums</li>
@@ -163,9 +177,9 @@
         
        <button class="btn btn-member-1">Subscribe now</button>
       </div>
-      <div class="member-box__option">
+      <div class="member-box__pro">
           <p>Pro</p>
-          <p>$29 <span>/month</span></p>
+          <p>$29<span>/month</span></p>
           <ul>
             <li><img src="assets/images/icon-check.svg" alt="icon check">2 books/month</li>
             <li><img src="assets/images/icon-check.svg" alt="icon check">Virtual meetups</li>
@@ -173,15 +187,14 @@
           
         <button class="btn btn-subscribe">Subscribe now</button>
       </div>
-      <div class="member-box__option">
+      <div class="member-box__enterprise">
         <p>Enterprise</p>
         <p>Custom</p>
           <ul>
             <li><img src="assets/images/icon-check.svg" alt="icon check">Team access</li>
             <li><img src="assets/images/icon-check.svg" alt="icon check">Private sessions</li>
           </ul>
-          
-          <button class="">Talk to us</button>
+        <button class="btn-enterrise__signup">Talk to us</button>
       </div>
     </div>
   </div>
@@ -198,11 +211,11 @@
         <img class="icon-star" src="assets/images/icon-star.svg" alt="icon-star">
         <img class="icon-star" src="assets/images/icon-star.svg" alt="icon-star">
       </div>
-     <div>
-      <h3 class="testimonial-heading">"This book club transformed my technical reading from a solitary
+      <div>
+        <h3 class="testimonial-heading">"This book club transformed my technical reading from a solitary
         activity into an enriching community experience. The discussions
         are gold!"</h3>
-      <p>Sarah Chen, Software Architect</p>
+      <p class="testimonial-name">Sarah Chen, Software Architect</p>
       </div>
     </div>
   </section>
@@ -214,13 +227,16 @@
       <div>
         <h3 class="footer-heading">Ready to debug your reading list?</h3>
         <button class="btn btn-footer">Review membership options <img src="assets/images/icon-arrow-up.svg" alt="icon arrow down"></button>
-          <img class="testimonial-avatars" src="assets/images/image-avatars.webp" alt="avatar img of testimonials">
-          <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
-          <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
-          <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
-          <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
-          <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
-          <p class="joined-description">200+ developers joined already</p>
+          
+      </div>
+      <div>
+        <img class="testimonial-avatars" src="assets/images/image-avatars.webp" alt="avatar img of testimonials">
+        <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
+        <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
+        <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
+        <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
+        <img class="icon-star" src="assets/images/icon-star.svg" alt="icon star">
+        <p class="joined-description">200+ developers joined already</p>
       </div>
       <div class="footer-line"></div>
       <div>

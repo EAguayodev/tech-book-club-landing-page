@@ -1,6 +1,6 @@
-:root{
+:root {
     --gunmetal: #062630;
-    --teal-green:#385159;
+    --teal-green: #385159;
     --platinum: #E6E1DF;
     --snow: #FAF5F3;
     --white: #ffffff;
@@ -9,97 +9,582 @@
     --light-salmon-50: #FFF5EF;
     --text-gradient: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
     --gradient: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+
+    /* fonts */
+    --martian-mono: "Martian Mono", serif;
+    --inter-serif: "Inter", serif;
 }
 
-*{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/* 
- @font-face {
-     font-family: ;
-     src: url();
- } */
 
-.ultimate-tech__section {}
+/*===================== Book club joining section styling =====================*/
+
+.ultimate-tech__section {
+    background-image: url(../assets/images/pattern-light-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem 8rem;
+}
+
+.ultimate-tech__section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .logo {}
 
-.book-club__heading {}
+.book-club__heading {
+    background: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3.875rem;
+    font-family: var(--martian-mono);
+    font-weight: 600;
+    width: 35.625rem;
+}
 
-.book-club__description {}
+.book-club__description {
+    color: var(--teal-green);
+    font-family: var(--inter-serif);
+    font-size: 1.25rem;
+    line-height: 2rem;
+    width: 35.625rem;
+}
 
 .btn {}
 
-.btn-member__options {}
+.btn-member__options {
+    border: 1px solid var(--teal-green);
+    color: var(--teal-green);
+    font-family: var(--inter-serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 1rem;
+    text-transform: uppercase;
+}
 
-.avatars-box {}
-
-.testimonial-avatars {}
+.avatars-box {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
 
 .icon-star {}
 
-.joined-description {}
+.joined-description {
+    color: var(--teal-green);
+    font-family: var(--inter-serif);
+    font-size: 0.875rem;
+}
 
-.image-hero {}
+.image-hero {
+    border-radius: 0.625rem;
+    max-width: 100%;
+}
 
-.read-grow__section {}
+/*======================= Book club styling ==========================*/
 
-.read-and-grow__heading {}
+.read-grow__section {
+    padding: 5rem 7rem;
+}
 
-.club {}
+.read-grow__section .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.club-heading {}
+.image-read__together {
+    border-radius: 0.625rem;
+    max-width: 100%;
+}
 
-.club-description {}
+.read-and-grow__heading {
+    color: var(--gunmetal);
+    font-family: var(--martian-mono);
+    font-size: 3.125rem;
+    width: 33.125rem;
+}
 
-.tech-journey__steps {}
+ul {
+    list-style: none;
+    margin-top: 3rem;
+    font-size: 1.125rem;
+}
 
-.tech-journey__heading {}
+li {
+    margin-left: 1rem;
+    color: var(--teal-green);
+    font-family: var(--inter-serif);
+    padding: 0.5rem 0;
+}
 
-.journey-box {}
+.icon-check {
+    position: relative;
+    right: 1rem;
+}
+
+/*=======================/ Book club styling ==========================*/
+
+
+/*======================= Average section ===============================*/
+.club {
+    padding: 5rem 7rem;
+}
+
+.club .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.club-heading {
+    color: var(--gunmetal);
+    font-size: 3.125rem;
+    font-family: var(--martian-mono);
+    width: 35rem;
+    margin-bottom: 2rem;
+
+}
+
+.club-description {
+    color: var(--teal-green);
+    font-family: var(--inter-serif);
+    line-height: 1.5rem;
+    width: 28rem;
+}
+
+.book-club__img-3 {
+    border-radius: 0.625rem;
+    max-width: 100%;
+}
+
+/*======================= Average section ===============================*/
+
+/*======================= Tech Journey section ==========================*/
+.tech-journey__steps {
+    padding: 3rem 22rem;
+}
+
+.journey-steps__container {
+    background: url(../assets/images/pattern-light-bg.svg),
+        linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 0.625rem;
+    max-width: 73.125rem;
+    width: 100%;
+    max-height: 454px;
+    height: 28.376rem;
+}
+
+.tech-journey__heading {
+    color: var(--gunmetal);
+    text-align: center;
+    font-family: var(--martian-mono);
+    font-size: 3.125rem;
+}
+
+.journey-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
 
 .journey-box__1 {}
 
-.jn__box {}
+.member-box__steps {
+    display: flex;
+    justify-content: space-around;
+    max-width: 226px;
+    width: 100%
+}
 
-.box-step__description {}
+.jn__box {
+    color: var(--teal-green);
+    border: 1px solid var(--teal-green);
+    width: 40px;
+    text-align: center;
+    font-weight: 500;
+    font-family: var(--inter-serif);
+    padding: 0.1rem;
+}
 
+.box-step__description {
+    color: var(--gunmetal);
+    font-family: var(--martian-mono);
+    font-size: 1.125rem;
+    font-weight: 600;
+    width: 14.156rem;
+}
+
+/*======================= Tech Journey section ===============================*/
+
+/* 
 .journey-box__2 {}
 
 .journey-box__3 {}
 
-.journey-box__4 {}
+.journey-box__4 {} */
 
-.membership-subscription {}
+/*======================= Member Options section ===============================*/
 
-.membership-container {}
+.membership-subscription {
+    padding: 5rem 7rem;
+}
 
-.membership-heading {}
+.membership-container {
+    display: flex;
+    flex-direction: column;
+}
 
-.member-row {}
+.membership-heading {
+    color: var(--gunmetal);
+    font-size: 3.125rem;
+    font-family: var(--martian-mono);
+    text-align: center;
+}
 
-.member-box__option {}
+.member-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
 
-.icon-check {}
+/* start box with child elements */
+.member-box__start {
+    border: 1px solid var(--platinum);
+    border-radius: 10px;
+    padding: 2rem 2rem;
+}
 
-.btn-member-1 {}
+.member-box__start p:nth-child(1) {
+    color: var(--gunmetal);
+    font-size: 1.5rem;
+    font-family: var(--martian-mono);
+    font-weight: 600;
+}
 
-.btn-subscribe {}
+.member-box__start p:nth-child(2) {
+    color: var(--gunmetal);
+    font-size: 2.125rem;
+    font-family: var(--martian-mono);
+    font-weight: 600;
+}
 
-.testimonial {}
+.member-box__start span {
+    color: var(--teal-green);
+    font-family: var(--inter-serif);
+    font-size: 1.25rem;
+    font-weight: 300;
+}
 
-.testimonial-row {}
+.btn-member-1 {
+    background-color: var(--light-salmon-50);
+    cursor: pointer;
+    color: var(--gunmetal);
+    border: 2px solid var(--gunmetal);
+    border-radius: 10px;
+    font-family: var(--martian-mono);
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 1.7rem;
+}
 
-.testimonial-heading {}
+.btn-member-1:hover {
+    background: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+}
 
-.footer-row {}
+/* start box with child elements */
 
-.footer-heading {}
+/* pro box with child elements */
+.member-box__pro {
+    background: linear-gradient(to right, #f6f4f3 0%, #e3fcfc 100%);
+    border: 1px solid var(--platinum);
+    padding: 4rem 4rem;
+}
 
-.btn-footer {}
+.member-box__pro p:nth-child(1) {
+    color: var(--gunmetal);
+    font-size: 1.5rem;
+    font-family: var(--martian-mono);
+    font-weight: 600;
+}
 
-.footer-line {}
+.member-box__pro p:nth-child(2) {
+    color: var(--gunmetal);
+    font-size: 2.125rem;
+    font-family: var(--martian-mono);
+    font-weight: 600;
+}
+
+.member-box__pro span {
+    color: var(--teal-green);
+    font-family: var(--inter-serif);
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.btn-subscribe {
+    background-color: var(--light-salmon-50);
+    color: var(--gunmetal);
+    cursor: pointer;
+    border: 2px solid var(--gunmetal);
+    border-radius: 10px;
+    font-family: var(--martian-mono);
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 1.7rem;
+}
+
+.btn-subscribe:hover {
+    background: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+}
+
+/* pro box with child elements */
+
+/* enterprise box with child elements */
+.member-box__enterprise {
+    border: 1px solid var(--platinum);
+    padding: 2rem 4rem;
+}
+
+.member-box__enterprise p:nth-child(1) {
+    color: var(--gunmetal);
+    font-size: 1.5rem;
+    font-family: var(--martian-mono);
+    font-weight: 600;
+}
+
+.member-box__enterprise p:nth-child(2) {
+    color: var(--gunmetal);
+    font-size: 1.5rem;
+    font-family: var(--martian-mono);
+    font-weight: 600;
+    position: relative;
+    top: 1.5rem;
+}
+
+.btn-enterrise__signup {
+    background-color: var(--light-salmon-50);
+    color: var(--gunmetal);
+    cursor: pointer;
+    border: 2px solid var(--gunmetal);
+    border-radius: 10px;
+    font-family: var(--martian-mono);
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 1.7rem;
+}
+
+.btn-enterrise__signup:hover {
+    background: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+}
+
+/* .icon-check {} */
+/*======================= Member Options section ===============================*/
+
+/*======================= Testimonial section ===============================*/
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-heading {
+    color: var(--gunmetal);
+    font-family: var(--martian-mono);
+    font-size: 2.125rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    width: 60.625rem;
+}
+
+.testimonial-name {
+    color: var(--teal-green);
+    font-family: var(--inter-serif);
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+footer {
+    background-image: url(../assets/images/pattern-dark-bg.svg);
+    background-color: var(--gunmetal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 32.563rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-heading {
+    color: var(--light-salmon-50);
+    font-size: 3.125rem;
+    font-family: var(--martian-mono);
+    text-align: center;
+    width: 42.813rem;
+}
+
+.btn-footer {
+    background: transparent;
+    border: 1px solid var(--snow);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--snow);
+    font-family: var(--martian-mono);
+    padding: 0.5rem 3rem;
+    text-transform: uppercase;
+}
+
+.footer-line {
+    background-color: var(--light-salmon-100);
+    height: 3px;
+    width: 100%;
+}
 
 .copyright {}
+
+/* Tablet styles */
+@media(max-width: 64rem) {
+    .ultimate-tech__section .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+
+    .read-grow__section .row {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .club .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tech-journey__steps{
+        display: none;
+    }
+
+    .member-row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+            /* justify-content: space-around; */
+    }
+
+    .testimonial-heading{
+        text-align: left;
+        width: 44rem;
+    }
+}
+
+@media(max-width: 48rem){
+    .ultimate-tech__section{
+        padding: 0;
+    }
+
+    .book-club__heading{
+        font-size: 2.375rem;
+        width: 21.438rem;
+    }
+
+    .book-club__description{
+        width: 21.438rem;
+    }
+
+    .read-grow__section{
+        padding: 0;
+    }
+
+    .read-and-grow__heading{
+        font-size: 2.125rem;
+        width: 21.438rem;
+    }
+
+    .club{
+        padding: 0;
+    }
+
+    .club-heading{
+        font-size: 2.125rem;
+        width: 21.438rem;
+    }
+
+    .club-description{
+        width: 21.438rem;
+    }
+
+    /* Membership styling */
+    .membership-subscription{
+        padding: 0;
+    }
+
+    .member-row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .membership-heading{
+        font-size: 2.125rem;
+        text-align: left;
+    }
+    /* Membership styling */
+
+    /* testimonial mobile styling */
+    .testimonial-heading{
+        font-size: 1.5rem;
+        width: 21.438rem;
+    }
+
+    /* footer styling */
+    .footer-heading{
+        font-size: 2.125rem;
+        width: 21.438rem;
+    }
+    /* footer styling */
+}
