@@ -526,7 +526,7 @@ footer {
 
 @media(max-width: 48rem){
     .ultimate-tech__section{
-        padding: 0;
+        padding: 0 1.5rem;
     }
 
     .book-club__heading{
@@ -539,7 +539,7 @@ footer {
     }
 
     .read-grow__section{
-        padding: 0;
+        padding: 0 1.5rem;
     }
 
     .read-and-grow__heading{
@@ -548,7 +548,7 @@ footer {
     }
 
     .club{
-        padding: 0;
+        padding: 0 1.5rem;
     }
 
     .club-heading{
@@ -562,7 +562,7 @@ footer {
 
     /* Membership styling */
     .membership-subscription{
-        padding: 0;
+        padding: 0 1.5rem;
     }
 
     .member-row{
@@ -586,5 +586,9 @@ footer {
         font-size: 2.125rem;
         width: 21.438rem;
     }
+
+    /* .image-hero{
+        width: 343px;
+    } */
     /* footer styling */
 }
