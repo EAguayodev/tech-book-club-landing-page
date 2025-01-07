@@ -573,6 +573,18 @@ footer {
         font-size: 2.125rem;
         text-align: left;
     }
+
+    .member-box__start{
+        padding: 2rem 2rem;
+    }
+
+    .member-box__pro{
+        padding: 4rem 0rem;
+    }
+
+    .member-box__enterprise{
+        padding: 2rem 0rem;
+    }
     /* Membership styling */
 
     /* testimonial mobile styling */
