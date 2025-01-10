@@ -38,7 +38,6 @@
     align-items: center;
 }
 
-.logo {}
 
 .book-club__heading {
     background: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
@@ -661,5 +660,9 @@ svg:hover{
     .btn-footer{
         padding: 1.5rem 0rem;
         left: 1rem;
+    }
+
+    .foot-nav{
+        flex-direction: column;
     }
 }
