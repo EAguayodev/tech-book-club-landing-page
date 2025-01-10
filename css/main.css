@@ -562,26 +562,39 @@ svg:hover{
 }
 
 @media(max-width: 48rem){
+    .logo{
+        padding: 1.5rem 0;
+    }
     .ultimate-tech__section{
         padding: 0 1.5rem;
     }
 
+    .avatars-box{
+        margin-bottom: 3rem;
+    }
+
     .book-club__heading{
         font-size: 2.375rem;
+        margin-bottom: 1.5rem;
         width: 21.438rem;
     }
 
     .book-club__description{
+        margin-bottom: 1.5rem;
         width: 21.438rem;
     }
 
     .read-grow__section{
-        padding: 0 1.5rem;
+        padding: 3rem 1.5rem;
     }
 
     .read-and-grow__heading{
         font-size: 2.125rem;
         width: 21.438rem;
+    }
+
+    .image-read__together{
+        padding-top: 2.5rem;
     }
 
     .club{
@@ -595,6 +608,10 @@ svg:hover{
 
     .club-description{
         width: 21.438rem;
+    }
+
+    .book-club__img-3{
+        margin: 2rem 0 3.5rem 0;
     }
 
     /* Membership styling */
