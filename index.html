@@ -11,14 +11,14 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<main role="main">
+<main>
     <!-- book club join section -->
     <section class="ultimate-tech__section">
       <a href="index.html">
-        <img class="logo" src="assets/images/logo.svg" alt="Tech book club">
+        <img class="logo" src="assets/images/logo.svg" alt="Tech book club" aria-label="Tech Book Club Logo">
       </a>
       <div class="row">
-        <div aria-labelledby="site-heading">
+        <div>
           <h1 class="book-club__heading">Join the ultimate tech book club</h1>
           <p class="book-club__description">
             Turn your reading time into learning time with fellow tech enthusiasts.
@@ -26,7 +26,7 @@
             skills one chapter at a time.
           </p>
     
-          <button class="btn btn-member__options" role="button">Review membership options <img
+          <button class="btn btn-member__options" aria-label="Membership Review Options">Review membership options <img
               src="assets/images/icon-arrow-down.svg" alt="arrow pointing down"></button>
     
           <div class="avatars-box">
@@ -90,9 +90,9 @@
     <!-- not your average book club section -->
     <section class="club">
       <div class="row">
-        <div aria-labelledby="heading-book-club">
+        <div>
           <h2 class="club-heading">
-            Not your average book club
+            Not your average book <span class="circle">club</span>
           </h2>
           <p class="club-description">
             Connect with a community that speaks your language - from <strong>Python</strong> to <strong>TypeScript</strong>
@@ -100,7 +100,6 @@
             everything in between. Our discussions blend technical depth with practical applications.
           </p>
         </div>
-        <!-- <img class="tech-stack__img" src="assets/images/logos-tech.svg" alt="tech stack logo - Typescript, Github, ReactJS"> -->
         <div>
           <picture>
             <source srcset="assets/images/image-not-average-desktop.webp" media="(max-width: 48rem)">
@@ -117,10 +116,10 @@
     
     <!-- tech journey section -->
     <section class="tech-journey__steps">
-      <div class="journey-steps__container" aria-labelledby="heading">
+      <div class="journey-steps__container">
         <h3 class="tech-journey__heading">Your tech <br> reading journey</h3>
         <div class="journey-box">
-          <div class="journey-box__1">
+          <div class="journey-box__steps box-1">
             <div class="member-box__steps">
               <div class="jn__box">
                 1
@@ -133,7 +132,7 @@
               <p class="box-step__description">Choose your membership tier</p>
             </div>
           </div>
-          <div class="journey-box__2">
+          <div class="journey-box__steps box-2">
             <div class="member-box__steps">
               <div class="jn__box">
                 2
@@ -146,7 +145,7 @@
               <p class="box-step__description">Get your monthly book selection</p>
             </div>
           </div>
-          <div class="journey-box__3">
+          <div class="journey-box__steps box-3">
             <div class="member-box__steps">
               <div class="jn__box">
                 3
@@ -157,7 +156,7 @@
               <p class="box-step__description">Join our discussion forums</p>
             </div>
           </div>
-          <div class="journey-box__4">
+          <div class="journey-box__steps box-4">
             <div class="member-box__steps">
               <div class="jn__box">
                 4
@@ -173,38 +172,45 @@
     <!--/ tech journey section -->
     
     <!-- Subscription option section -->
+
+    
     <section class="membership-subscription">
-      <div class="membership-container" aria-labelledby="member-heading">
+      <div class="membership-container">
         <h3 class="membership-heading">Membership options</h3>
         <div class="member-row">
-          <div class="member-box__start" aria-labelledby="subcription-content">
+          <div class="member-box__start">
             <p>Starter</p>
             <p>$19<span>/month</span></p>
+            <div class="member-line"></div>
             <ul>
               <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">1 book/month</li>
               <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">Online forums</li>
             </ul>
     
-            <button class="btn btn-member-1" role="button">Subscribe now</button>
+            <button class="btn btn-member-1" aria-label="Subscribe to Starter plan">Subscribe now</button>
           </div>
-          <div class="member-box__pro" aria-labelledby="subcription-content">
+          <div class="member-box__pro">
             <p>Pro</p>
             <p>$29<span>/month</span></p>
+            <div class="member-line"></div>
             <ul>
-              <li><img src="assets/images/icon-check.svg" alt="icon check">2 books/month</li>
-              <li><img src="assets/images/icon-check.svg" alt="icon check">Virtual meetups</li>
+              <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">2 books/month</li>
+              <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">Virtual meetups</li>
             </ul>
     
-            <button class="btn btn-subscribe" role="button">Subscribe now</button>
+            <button class="btn btn-subscribe" aria-label="Subscribe to Pro plan">Subscribe now</button>
           </div>
-          <div class="member-box__enterprise" aria-labelledby="subcription-content">
+          <div class="member-box__enterprise">
             <p>Enterprise</p>
             <p>Custom</p>
-            <ul>
-              <li><img src="assets/images/icon-check.svg" alt="icon check">Team access</li>
-              <li><img src="assets/images/icon-check.svg" alt="icon check">Private sessions</li>
-            </ul>
-            <button class="btn-enterrise__signup" role="button">Talk to us</button>
+            <div class="member-line"></div>
+            <div>
+              <ul>
+                <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">Team access</li>
+                <li><img class="icon-check" src="assets/images/icon-check.svg" alt="icon check">Private sessions</li>
+              </ul>
+              <button class="btn-enterprise__signup" aria-label="Talk to us about Enterprise plan">Talk to us</button>
+            </div>
           </div>
         </div>
       </div>
@@ -221,7 +227,7 @@
           <img class="icon-star" src="assets/images/icon-star.svg" alt="icon-star">
           <img class="icon-star" src="assets/images/icon-star.svg" alt="icon-star">
         </div>
-        <div aria-labelledby="testimonial-heading-section">
+        <div>
           <h3 class="testimonial-heading">"This book club transformed my technical reading from a solitary
             activity into an enriching community experience. The discussions
             are gold!"</h3>
@@ -233,9 +239,9 @@
 </main>
 
 <!-- footer subscription section -->
-<footer aria-labelledby="footer-section">
+<footer>
     <div class="footer-row">
-      <div aria-labelledby="footer-heading" role="navigation">
+      <div>
         <h3 class="footer-heading">Ready to debug your reading list?</h3>
         <button class="btn btn-footer">Review membership options <img src="assets/images/icon-arrow-up.svg" alt="icon arrow down"></button>
       </div>
@@ -253,8 +259,8 @@
         </div>
       </div>
       <div class="footer-line"></div>
-      <div class="foot-nav" aria-label="footer-site-navigation">
-        <div aria-label="copy">
+      <div class="foot-nav">
+        <div>
           <p class="copyright">© 2024 - Tech Book Club</p>
         </div>
         <div>

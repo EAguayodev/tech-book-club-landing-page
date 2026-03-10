@@ -26,10 +26,26 @@
 /*===================== Book club joining section styling =====================*/
 
 .ultimate-tech__section {
+    background-color: var(--snow);
     background-image: url(../assets/images/pattern-light-bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 3rem 8rem;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.ultimate-tech__section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/pattern-glow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom -8vw left 60vw;
+    z-index: -1;
 }
 
 .ultimate-tech__section .row {
@@ -47,17 +63,20 @@
     font-family: var(--martian-mono);
     font-weight: 600;
     width: 35.625rem;
+    margin-bottom: 1.5rem;
 }
 
 .book-club__description {
-    color: var(--teal-green);
+    color: var(--teal-green);   
     font-family: var(--inter-serif);
     font-size: 1.25rem;
     line-height: 2rem;
     width: 35.625rem;
+    margin-bottom: 2rem;
 }
 
 .btn-member__options {
+    background-color: var(--light-salmon-100);
     border: 1px solid var(--teal-green);
     border-radius: 10px;
     color: var(--teal-green);
@@ -65,8 +84,12 @@
     font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
+    margin-bottom: 0.5rem;
     padding: 1rem;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn-member__options:hover{
@@ -78,8 +101,6 @@
     align-items: center;
     margin-top: 1rem;
 }
-
-/* .icon-star {} */
 
 .joined-description {
     color: var(--teal-green);
@@ -154,7 +175,10 @@ li {
     font-family: var(--martian-mono);
     width: 35rem;
     margin-bottom: 2rem;
+}
 
+.circle{
+    background-image: url(../assets/images/pattern-circle.png);
 }
 
 .club-description {
@@ -177,8 +201,8 @@ li {
 }
 
 .journey-steps__container {
-    background: url(../assets/images/pattern-light-bg.svg),
-        linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+    background-color: var(--snow);
+    background-image: url(../assets/images/pattern-light-bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
@@ -190,6 +214,22 @@ li {
     width: 100%;
     max-height: 454px;
     height: 28.376rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.journey-steps__container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/pattern-glow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    bottom: -8vw;
+    left: 43vw;
 }
 
 .tech-journey__heading {
@@ -204,23 +244,33 @@ li {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 5rem;
     margin-left: 2rem;
+    gap: 30px;
+}
+
+.journey-box__steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .member-box__steps {
     display: flex;
-    justify-content: space-around;
-    max-width: 226px;
-    width: 100%
+    justify-content: space-between;
 }
 
 .jn__box {
     color: var(--teal-green);
     border: 1px solid var(--teal-green);
+    border-radius: 5px;
     width: 40px;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: 500;
     font-family: var(--inter-serif);
     padding: 0.1rem;
+    position: relative;
+    left: -3rem;
 }
 
 .box-step__description {
@@ -249,6 +299,7 @@ li {
 .membership-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .membership-heading {
@@ -262,6 +313,7 @@ li {
     display: flex;
     justify-content: space-around;
     margin-top: 3rem;
+    gap: 30px;
 }
 
 /* start box with child elements */
@@ -269,6 +321,15 @@ li {
     border: 1px solid var(--platinum);
     border-radius: 10px;
     padding: 2rem 2rem;
+    max-width: 302px;
+    width: 100%;
+}
+
+.member-line{
+    max-width: 302px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--platinum);
 }
 
 .member-box__start p:nth-child(1) {
@@ -276,6 +337,7 @@ li {
     font-size: 1.5rem;
     font-family: var(--martian-mono);
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .member-box__start p:nth-child(2) {
@@ -283,6 +345,7 @@ li {
     font-size: 2.125rem;
     font-family: var(--martian-mono);
     font-weight: 600;
+    margin-bottom: 2rem;
 }
 
 .member-box__start span {
@@ -301,7 +364,7 @@ li {
     font-family: var(--martian-mono);
     font-size: 1.125rem;
     font-weight: 500;
-    padding: 1rem 3rem;
+    padding: 1.125rem;
     text-transform: uppercase;
     position: relative;
     top: 1.7rem;
@@ -315,9 +378,17 @@ li {
 
 /* pro box with child elements */
 .member-box__pro {
-    background: linear-gradient(to right, #f6f4f3 0%, #e3fcfc 100%);
+    background-color: var(--snow);
     border: 1px solid var(--platinum);
-    padding: 4rem 4rem;
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    position: relative;
+    background-image: url(../assets/images/pattern-glow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom -8vw left 10vw;
+    max-width: 350px;
+    width: 100%;
 }
 
 .member-box__pro p:nth-child(1) {
@@ -325,6 +396,7 @@ li {
     font-size: 1.5rem;
     font-family: var(--martian-mono);
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .member-box__pro p:nth-child(2) {
@@ -332,6 +404,7 @@ li {
     font-size: 2.125rem;
     font-family: var(--martian-mono);
     font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 .member-box__pro span {
@@ -350,7 +423,7 @@ li {
     font-family: var(--martian-mono);
     font-size: 1.125rem;
     font-weight: 500;
-    padding: 1rem 4rem;
+    padding: 1.125rem;
     text-transform: uppercase;
     position: relative;
     top: 1.7rem;
@@ -365,7 +438,10 @@ li {
 /* enterprise box with child elements */
 .member-box__enterprise {
     border: 1px solid var(--platinum);
+    border-radius: 10px;
     padding: 2rem 4rem;
+    max-width: 302px;
+        width: 100%;
 }
 
 .member-box__enterprise p:nth-child(1) {
@@ -373,6 +449,7 @@ li {
     font-size: 1.5rem;
     font-family: var(--martian-mono);
     font-weight: 600;
+    margin-bottom: 2rem;
 }
 
 .member-box__enterprise p:nth-child(2) {
@@ -381,10 +458,10 @@ li {
     font-family: var(--martian-mono);
     font-weight: 600;
     position: relative;
-    top: 1.5rem;
+    margin-bottom: 2rem;
 }
 
-.btn-enterrise__signup {
+.btn-enterprise__signup {
     background-color: var(--light-salmon-50);
     color: var(--gunmetal);
     cursor: pointer;
@@ -393,17 +470,21 @@ li {
     font-family: var(--martian-mono);
     font-size: 1.125rem;
     font-weight: 500;
-    padding: 1rem 4rem;
+    padding: 1.125rem;
     text-transform: uppercase;
     position: relative;
-    top: 1.7rem;
+    margin-bottom: 2rem;
 }
 
-.btn-enterrise__signup:hover {
+.btn-enterprise__signup:hover {
     background: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
 }
 
-/* .icon-check {} */
+.icon-check {
+    position: relative;
+    right: 1rem;
+    top: 0.5rem;
+}
 /*======================= Member Options section ===============================*/
 
 /*======================= Testimonial section ===============================*/
@@ -413,6 +494,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 .testimonial-row {
@@ -420,6 +502,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .testimonial-heading {
@@ -476,11 +559,15 @@ footer {
     color: var(--snow);
     font-family: var(--martian-mono);
     font-size: 1.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1.5rem;
     position: relative;
     left: 9rem;
     padding: 1.5rem 3rem;
     text-transform: uppercase;
+    gap: 20px;
 }
 
 .btn-footer:hover{
@@ -491,11 +578,13 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 .footer-line {
     background-color: var(--light-salmon-100);
     height: 3px;
+    margin-bottom: 3rem;
     /* width: 75rem; */
 }
 
@@ -517,7 +606,7 @@ footer {
 
 svg:hover{
     cursor: pointer;
-    fill: #FFF5EF;
+    fill: var(--teal-green);
 }
 /* footer style section ends */
 
@@ -632,11 +721,11 @@ svg:hover{
     }
 
     .member-box__pro{
-        padding: 4rem 0rem;
+        padding: 3rem 2rem;
     }
 
     .member-box__enterprise{
-        padding: 2rem 0rem;
+        padding: 2rem 2rem;
     }
     /* Membership styling */
 
@@ -664,5 +753,6 @@ svg:hover{
 
     .foot-nav{
         flex-direction: column;
+        gap: 30px;
     }
 }
